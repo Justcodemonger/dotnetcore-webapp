@@ -41,11 +41,11 @@ jobs:
           dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' 
 
 
-          #SCA  
-      - name: Snyk
-        uses: snyk/actions/node@master
-        env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
+       #   #SCA  
+      #- name: Snyk
+       # uses: snyk/actions/node@master
+       # env:
+       # SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
 
 
       # Deploy to Azure Web apps
